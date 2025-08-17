@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="4000" height="2200" viewBox="0 0 4000 2200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .fg { fill: #efefef; font-family: "Times New Roman", Georgia, serif; }
+    </style>
+  </defs>
+  <!-- Leaf (rotated ellipse) -->
+  <g transform="translate(2000,311.0) rotate(-12) translate(-390.0, -251.0)">
+    <ellipse cx="390.0" cy="251.0" rx="389.0" ry="250.0" class="fg"/>
+    <path d="M 78 301 L 702 150"
+          stroke="#0a0a0a" stroke-opacity="0.0" stroke-width="60" fill="none"/>
+  </g>
+  <!-- Text -->
+  <text x="1419" y="936" class="fg" font-size="380">LUSH</text>
+  <text x="1673" y="1249" class="fg" font-size="210">& CO.</text>
+</svg>
