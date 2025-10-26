@@ -13,6 +13,7 @@ const Art = () => {
 
     const maskTimeLine = gsap.timeline({
       scrollTrigger: {
+        duration:0,
         trigger: '#art',
         start,
         end: 'bottom center',
@@ -23,7 +24,7 @@ const Art = () => {
     maskTimeLine
       .to('.will-fade', { opacity: 0, stagger: 0.2, ease: 'power1.inOut' })
       .to('.masked-img', { scale: 1.3, maskPosition: 'center', maskSize: '400%', duration: 1, ease: 'power1.inOut' })
-      .to('#masked-content', { opacity: 1, duration: 1, ease: 'power1.inOut' })
+      .to('#masked-content', { opacity: 1, duration: 1.5, ease: 'power1.inOut' })
   })
 
   return (

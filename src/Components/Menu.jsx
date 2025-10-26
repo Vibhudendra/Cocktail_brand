@@ -1,13 +1,33 @@
 import { useGSAP } from "@gsap/react"
 import { cocktailLists, mockTailLists } from "../../Constants"
 import gsap from 'gsap';
+import { SplitText } from 'gsap/all'
 
 
 const Menu = () => {
 
     useGSAP(() => {
+
+        //------------------------MENU ANIMATION START----------------------------------
+        const titlesplit = SplitText.create('.list', {
+            type: 'words',
+        })
+        const scrollTimeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: '.list',
+                start: 'top center',
+
+            }
+        })
+        scrollTimeline
+            .from(titlesplit.words, {
+                opacity: 0, duration: 0.8, yPercent: 100, ease: 'expo.out', stagger: 0.01
+            })
+        //-------------------------MENU ANIMATION END------------------------------------
+        
         const parallaxTimeLine = gsap.timeline({
             scrollTrigger: {
+                opacity: 0,
                 trigger: '#cocktails',
                 start: 'top 30%',
                 end: 'bottom 80%',
@@ -23,7 +43,6 @@ const Menu = () => {
                 x: 100, y: 200
             }
             )
-
 
     })
 
