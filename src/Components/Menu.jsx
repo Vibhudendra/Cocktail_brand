@@ -20,7 +20,7 @@ const Menu = () => {
                 x: -200, y: 200
             })
             .from('#c-right-leaf', {
-                x: 150, y: 100
+                x: 100, y: 200
             }
             )
 
